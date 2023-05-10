@@ -12,7 +12,7 @@
 .img {
   width: 100%;
   height: 700px;
-  background: transparent url("src/assets/image/ceshi2.png") no-repeat center top;
+  background: transparent url("src/assets/image/weixin.png") no-repeat center top;
   background-size: contain;
 }
 </style>

@@ -13,6 +13,6 @@
   width: 100%;
   height: 700px;
   background: transparent url("src/assets/image/ceshi.png") no-repeat center top;
-  background-size: cover;
+  background-size: contain;
 }
 </style>

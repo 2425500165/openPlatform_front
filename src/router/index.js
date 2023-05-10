@@ -13,11 +13,13 @@ const router = createRouter({
     {
       path: '/doc',
       name: 'doc',
-      redirect: '/docMainGuide',
+      redirect: '/docWeixin',
       component: () => import('../views/doc/doc.vue'),
       children:[
-        {path: '/docMainGuide' , name: 'doc-main-guide', component: () => import('../views/doc/components/doc-main-guide.vue')},
-        {path: '/docMainQuestion' , name: 'doc-main-question', component: () => import('../views/doc/components/doc-main-question.vue')}
+        // {path: '/docMainGuide' , name: 'doc-main-guide', component: () => import('../views/doc/components/doc-main-guide.vue')},
+        {path: '/docMainQuestion' , name: 'doc-main-question', component: () => import('../views/doc/components/doc-main-question.vue')},
+        {path: '/docWeixin' , name: 'doc-weixin', component: () => import('../views/doc/components/doc-weixin.vue')},
+        {path: '/docZhifubao' , name: 'doc-zhifubao', component: () => import('../views/doc/components/doc-zhifubao.vue')}
       ]
     },
     {
@@ -30,7 +32,7 @@ const router = createRouter({
       component: () => import('../views/account/account.vue'),
       children:[
         {path: '/accountMainUserInfo' , name: 'account-main-userInfo', component: () => import('../views/account/components/account-main-userInfo.vue')},
-        {path: '/accountMainEditPass' , name: 'account-main-editPass', component: () => import('../views/account/components/account-main-editPass.vue')}
+        {path: '/accountMainEditPass' , name: 'account-main-editPass', component: () => import('../views/account/components/account-main-editPass.vue')},
       ]
     }
   ]
