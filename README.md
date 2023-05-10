@@ -1,6 +1,6 @@
 # openPlatform_front
 
-This template should help get you started developing with Vue 3 in Vite.
+支付接入平台
 
 ## Recommended IDE Setup
 
